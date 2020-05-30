@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Squada+One&display=swap');
+
+.main {
+  display: flex;
+  align-self: center;
+  color: white;
+  font-weight: bold;
+  background: #14061c;
+  font-family: 'Squada One', cursive;
+  font-size: x-large;
+}
+
+.calc {
+  height: 350px;
+  width: 300px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1px;
+  grid-template-areas:
+      "display display display display"
+      "back none none clear"
+      "seven eight nine divide"
+      "four five six multiply"
+      "one two three minus"
+      "zero dot equal plus";
+  justify-items: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.calc > div {
+  display: flex;
+  justify-self: stretch;
+  justify-content: center;
+  align-items: center;
+  border-bottom: #f402f17a 1px inset;
+  height: 35px;
+  margin: 1px;
+  cursor: pointer;
+}
+
+.clear {
+  grid-area: clear;
+}
+.back {
+  grid-area: back;
+}
+.display {
+  grid-area: display;
+  background-color: #ebf1f7;
+  color: black;
+  display: flex;
+  height: 30px;
+  justify-self: stretch;
+  padding-left: 5px;
+  font-family: 'Squada One', cursive;
+}
+.seven {
+  grid-area: seven;
+}
+.eight {
+  grid-area: eight;
+}
+.nine {
+  grid-area: nine;
+}
+.divide {
+  grid-area: divide;
+}
+.four {
+  grid-area: four;
+}
+.five {
+  grid-area: five;
+}
+.six {
+  grid-area: six;
+}
+.multiply {
+  grid-area: multiply;
+}
+.one {
+  grid-area: one;
+}
+.two {
+  grid-area: two;
+}
+.three {
+  grid-area: three;
+}
+.zero {
+  grid-area: zero;
+}
+.minus {
+  grid-area: minus;
+}
+.dot {
+  grid-area: dot;
+}
+.equal {
+  grid-area: equal;
+}
+.plus {
+  grid-area: plus;
+}
+
